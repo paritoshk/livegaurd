@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "livegaurd"
+version = "0.1.0"
+description = "Runtime intervention system for reasoning models using Sparse Autoencoders"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Paritosh Kulkarni"}
+]
+keywords = ["sae", "interpretability", "gemma", "reasoning", "llm", "sycophancy"]
+
+dependencies = [
+    "torch>=2.0",
+    "transformers>=4.40",
+    "accelerate",
+    "sae-lens>=3.0",
+    "transformer-lens>=2.0",
+    "huggingface_hub",
+    "einops",
+    "jaxtyping",
+    "pandas",
+    "plotly",
+    "python-dotenv",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "ipykernel",
+    "jupyter",
+    "black",
+    "ruff",
+]
+
+[project.urls]
+Homepage = "https://github.com/paritoshkulkarni/livegaurd"
+Repository = "https://github.com/paritoshkulkarni/livegaurd"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]

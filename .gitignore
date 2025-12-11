@@ -1,0 +1,28 @@
+# RunPod connection info (changes every restart, don't commit)
+RUNPOD_RECONNECT.md
+
+# Environment files
+.env
+.env.local
+
+# Models (too large for git)
+models/
+*.pt
+*.db
+*.sqlite
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# System
+.DS_Store
+
+.gemini/
+gha-creds-*.json
