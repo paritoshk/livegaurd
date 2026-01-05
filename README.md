@@ -117,10 +117,10 @@ livegaurd/
 ## Citation
 
 ```bibtex
-@misc{livegaurd2024,
+@misc{livegaurd2025,
     title={LiveGaurd: Runtime Intervention for LLMs using SAEs},
     author={Paritosh Kulkarni},
-    year={2024},
+    year={2025},
     url={https://github.com/paritoshkulkarni/livegaurd}
 }
 ```
